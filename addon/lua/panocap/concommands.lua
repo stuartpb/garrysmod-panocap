@@ -28,7 +28,7 @@ local function filenameFormatter(pattern)
   return function(face)
     replacements.f = faceNames[face]
     replacements.i = face
-    return string.gsub(pattern, '%%(%a)', replacements)
+    return (string.gsub(pattern, '%%(%a)', replacements))
   end
 end
 
