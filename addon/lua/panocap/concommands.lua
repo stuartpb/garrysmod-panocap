@@ -22,7 +22,7 @@ local function filenameFormatter(pattern)
   local time = os.time()
   local replacements = {
     d = os.date('%Y-%m-%d', time),
-    t = os.date('%H:%M:%S', time),
+    t = os.date('%H%M%S', time),
     m = game.GetMap(),
   }
   return function(face)
