@@ -15,9 +15,9 @@ local convars = {
 }
 
 local convarTypeGetters = {
-  boolean = 'GetBool'
-  number = 'GetFloat'
-  string = 'GetString'
+  boolean = 'GetBool',
+  number = 'GetFloat',
+  string = 'GetString',
 }
 
 for convar, defval in pairs(convars) do
