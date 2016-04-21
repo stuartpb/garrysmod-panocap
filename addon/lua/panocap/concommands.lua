@@ -21,8 +21,8 @@ local faceNames = {'front', 'right', 'back', 'left', 'top', 'bottom'}
 local function filenameFormatter(pattern)
   local time = os.time()
   local replacements = {
-    d = os.date('%F', time),
-    t = os.date('%T', time),
+    d = os.date('%Y-%m-%d', time),
+    t = os.date('%H:%M:%S', time),
     m = game.GetMap(),
   }
   return function(face)
