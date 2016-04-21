@@ -42,7 +42,7 @@ function exports.init()
 
     local filenamer = filenameFormatter(filename)
 
-    local angle = player:GetAngles()
+    local angle = player:EyeAngles()
     local axes = {'pitch', 'yaw', 'roll'}
     for i = 1, #axes do
       local axis = axes[i]
