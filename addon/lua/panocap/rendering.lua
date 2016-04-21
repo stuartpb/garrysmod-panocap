@@ -28,7 +28,7 @@ function rendering.renderCube(opts)
   end
 
   local viewData = {
-    origin = opts.origin,
+    origin = opts.origin, fov = 90,
     x = 0, y = 0, w = res, h = res, aspectratio = 1,
     dopostprocess = booldefault('postprocess', true),
     drawmonitors = booldefault('drawmonitors', true),
