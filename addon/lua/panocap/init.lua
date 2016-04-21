@@ -2,9 +2,9 @@
 -- This work may be used freely as long as this notice is included.
 -- The work is provided "as is" without warranty, express or implied.
 
-local module = {}
-function module.init()
+local exports = {}
+function exports.init()
   include('panocap/concommands.lua').init()
   include('panocap/panel.lua').init()
 end
-return module
+return exports

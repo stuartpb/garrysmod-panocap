@@ -2,7 +2,7 @@
 -- This work may be used freely as long as this notice is included.
 -- The work is provided "as is" without warranty, express or implied.
 
-local module = {}
+local exports = {}
 
 local convars = {
   filetype = 'png',
@@ -24,9 +24,9 @@ for convar, defval in pairs(convars) do
   -- TODO: add help text (5th param) after Next Update lands
   local handle = CreateClientConVar('panocap_' .. convar, defval, true, false)
   local getter = convarTypeGetters[type(defval)]
-  module[convar] = function ()
+  exports[convar] = function ()
     return handle[getter](handle)
   end
 end
 
-return module
+return exports

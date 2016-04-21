@@ -2,7 +2,7 @@
 -- This work may be used freely as long as this notice is included.
 -- The work is provided "as is" without warranty, express or implied.
 
-local module = {}
+local exports = {}
 local convars = include('panocap/convars.lua')
 local rendering = include('panocap/rendering.lua')
 
@@ -32,7 +32,7 @@ local function filenameFormatter(pattern)
   end
 end
 
-function module.init()
+function exports.init()
   addCommand('panocap_cubic', {}, function(player)
     local filename = convars.filename()
     local filetype = convars.filetype()
@@ -66,4 +66,4 @@ function module.init()
   end)
 end
 
-return module
+return exports
