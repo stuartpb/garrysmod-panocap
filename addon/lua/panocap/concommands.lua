@@ -3,8 +3,8 @@
 -- The work is provided "as is" without warranty, express or implied.
 
 local module = {}
-local convars = require('panocap/convars')
-local rendering = require('panocap/rendering')
+local convars = include('panocap/convars.lua')
+local rendering = include('panocap/rendering.lua')
 
 local function addCommand(name, params, cb)
   return concommand.Add(name, function(ply, cmd, args)

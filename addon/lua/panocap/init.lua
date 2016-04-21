@@ -4,7 +4,7 @@
 
 local module = {}
 function module.init()
-  require('panocap/concommands').init()
-  require('panocap/panel').init()
+  include('panocap/concommands.lua').init()
+  include('panocap/panel.lua').init()
 end
 return module
